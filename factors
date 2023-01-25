@@ -10,10 +10,10 @@ for place in data:
 # up till here i have moved the file content into an integer list.
 holder.sort()
 for place in holder:
-    first = 1
+    first = 2
     while first * second != place:
         temp = gcd(first, place)
         if temp == 1:
             first += 1
         second = int(place / temp)
-    print("{}  {}".format(first, second))
+    print(f"{place}:{first}*{second}")
