@@ -16,5 +16,5 @@ for place in holder:
         if place % i == 0:
             first = i
             second = place//first
-            print(f"{place}:{first}*{second}")
+            print(f"{place}={first}*{second}")
             break
