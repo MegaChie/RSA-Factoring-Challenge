@@ -16,4 +16,4 @@ for place in holder:
         if temp == 1:
             first += 1
         second = int(place / temp)
-    print(f"{place}={first}*{second}")
+    print(f"{place}:{first}*{second}")
