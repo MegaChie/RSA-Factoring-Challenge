@@ -1,20 +1,20 @@
 #!/usr/bin/python3
-if __name__ == "__main__"
-from math import gcd
-holder = []
-fileOpen = open('factors', 'r')
-data = fileOpen.readlines()
-temp = ([s.replace('\n', '') for s in data])
-fileOpen.close
-for place in data:
-    holder.append(int(place))
-# up till here i have moved the file content into an integer list.
-holder.sort()
-for place in holder:
-    first = 2
-    while first * second != place:
-        temp = gcd(first, place)
-        if temp == 1:
-            first += 1
-        second = int(place / temp)
-    print(f"{place}:{first}*{second}")
+if __name__ == "__main__":
+    from math import gcd
+    holder = []
+    fileOpen = open('factors', 'r')
+    data = fileOpen.readlines()
+    temp = ([s.replace('\n', '') for s in data])
+    fileOpen.close
+    for place in data:
+        holder.append(int(place))
+    # up till here i have moved the file content into an integer list.
+    holder.sort()
+    for place in holder:
+        first = 2
+        while first * second != place:
+            temp = gcd(first, place)
+            if temp == 1:
+                first += 1
+            second = int(place / temp)
+        print(f"{place}:{first}*{second}")
